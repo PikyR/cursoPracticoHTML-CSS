@@ -8,3 +8,13 @@
 html{
   font-size: 62.5%;
 }
+body{
+  font-size: 1.6rem;
+  font-family:Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+  min-width: 320px;
+  height: 100vh;
+  padding: 0.8rem;
+  text-align: center;
+}
