@@ -19,27 +19,29 @@
       <header class="header">
         <nav class="header__nav">
           <ul class="header__nav-item-container">
-            <li><a class="header__nav-item-link" href="#" title="Coso">Todo</a></li>
-            <li><a class="header__nav-item-link" href="#" title="Imagenes">Imágenes</a></li>
-            <li><a class="header__nav-item-icon" href="#"><!--ICONO--></a></li>
-            <li><a class="header__nav-item-avatar" href="#"><!--AVATAR--></a></li>
+            <li class="header__nav-item"><a class="header__nav-item--link" href="#" title="Todo">Todo</a></li>
+            <li class="header__nav-item"><a class="header__nav-item--link" href="#" title="Imagenes">Imágenes</a></li>
+            <li class="header__nav-item"><a class="header__nav-item--icon" href="#"><!--ICONO--></a></li>
+            <li class="header__nav-item"><a class="header__nav-item--avatar" href="#"><!--AVATAR--></a></li>
           </ul>
         </nav>
       </header>
       <!--Header end-->
 
-      <main>
-        <figure>
+      <main class="main">
+        <figure class="main__logo">
           <picture>
-            <source />
             <!-- Para img responsive -->
+            <source src=""/>
             <img src="" alt="Logo de Google" />
           </picture>
         </figure>
         <form action="">
-          <span><!--Search icon--></span>
-          <input type="text" />
-          <span><!--Voice icon--></span>
+          <div class="main__search-imput">
+            <span><!--Search icon--></span>
+            <input type="text" />
+            <span><!--Voice icon--></span>
+          </div>
           <input type="button" value="Buscar con Google" />
           <input type="button" value="Me siento con suerte" />
         </form>

@@ -13,8 +13,34 @@ body{
   font-family:Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .container{
+  background-color: bisque;
   min-width: 320px;
+  min-height: 480px;
   height: 100vh;
-  padding: 0.8rem;
+  padding: 0.5rem;
   text-align: center;
 }
+
+.header{
+  width: 100%;
+  height: 4.8rem;  
+  display: flex;  
+  justify-content: flex-end;
+  align-items: stretch;  
+}
+.header__nav-item-container{
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
+.header__nav-item{      
+  margin-left: 1rem;
+}
+.header__nav-item--link{
+  line-height: 4.8rem;
+  text-transform: uppercase;
+  text-decoration: none;  
+}
+/* Header end */
+
+/* MAIN */
