@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>DoppelGoogle</title>
+    
     <!-- Styles -->
     <link rel="stylesheet" href="./styles/style.css" />
-    <!-- End styles -->
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- End fonts -->
+    
   </head>
   <body>
     <div class="container">
@@ -37,33 +38,31 @@
           </picture>
         </figure>
         <form action="">
-          <div class="main__search-imput">
-            <span><!--Search icon--></span>
-            <input type="text" />
-            <span><!--Voice icon--></span>
+          <div class="main__search">
+            <span class="search__icon-search"><!--Search icon--></span>
+            <input class="search__input" type="text" />
+            <span class="search__icon-voice"><!--Voice icon--></span>
           </div>
-          <input type="button" value="Buscar con Google" />
-          <input type="button" value="Me siento con suerte" />
+          <input class="search__btn" type="button" value="Buscar con Google" />
+          <input class="search__btn" type="button" value="Me siento con suerte" />
         </form>
-        <p>Ofrecido por Google en:</p>
-        <span
-          ><a href="#">English</a><a href="#">Español (Latinoamérica)</a></span
-        >
+        <p class="main__txt">Ofrecido por Google en:</p>
+        <span class="main__txt txt--link"><a href="#">English</a>&nbsp;<a href="#">Español (Latinoamérica)</a></span>
       </main>
       <!-- Main content end -->
 
-      <footer>
+      <footer class="footer">
         <p>Argentina</p>
-        <nav>
+        <nav class="foooter__link-container">
           <ul>
-            <li><a href="#">Sobre Google</a></li>
-            <li><a href="#">Publicidad</a></li>
-            <li><a href="#">Negocios</a></li>
+            <li><a class="footer__txt txt--link" href="#">Sobre Google</a></li>
+            <li><a class="footer__txt txt--link" href="#">Publicidad</a></li>
+            <li><a class="footer__txt txt--link" href="#">Negocios</a></li>
           </ul>
           <ul>
-            <li><a href="#">Privacidad</a></li>
-            <li><a href="#">Condiciones</a></li>
-            <li><a href="#">Preferencias</a></li>
+            <li><a class="footer__txt txt--link" href="#">Privacidad</a></li>
+            <li><a class="footer__txt txt--link" href="#">Condiciones</a></li>
+            <li><a class="footer__txt txt--link" href="#">Preferencias</a></li>
           </ul>
         </nav>
       </footer>
