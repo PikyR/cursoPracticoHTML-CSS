@@ -1,107 +1,141 @@
 /* variables */
-  :root{
-    --text-primary-color: #70757A;
-    --text-main-color:#3C4043;
-    --text-link-active-color:#4285F4;
-  }
+:root {
+  --text-primary-color: #70757a;
+  --text-main-color: #3c4043;
+  --text-link-active-color: #4285f4;
+}
 /* fin */
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-html{
+html {
   font-size: 62.5%;
 }
-body{
+body {
   font-size: 1.6rem;
-  font-family:Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* contenedor general  */
-  .container{
-    min-width: 320px;
-    min-height: 480px;
-    height: 100vh;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;  
-    text-align: center;
+.container {
+  min-width: 320px;
+  min-height: 480px;
+  height: 100vh;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: center;
 
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-  }
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
 /*fin*/
 
 /* HEADER */
-  .header{
-    width: 100%;  
-    display: flex;  
-    justify-content: flex-end;
-    align-items: stretch;
-    font-size: 1.2rem;
-  }
-  .header__nav-item-container{
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none;
-  }
- 
-  .header__nav-item--link{
-    display: inline-block;
-    padding: 0 0.8rem;
-    margin-right: 1.5rem;
-    margin-left: 0.4rem;
-    line-height: 4.8rem;  
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--text-primary-color);
-  }
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  font-size: 1.2rem;
+}
+.header__nav-item-container {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
 
-  .header__nav-item--avatar{  
-    width: 4rem;
-    height: 4rem;
-    padding: 0.4rem;
-    margin: 0.4rem; 
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    border-radius: 50%;
-  }
-  .header__nav-item--avatar:hover{
-    background-color: #f0f0f0;
-  }
+.header__nav-item--link {
+  display: inline-block;
+  padding: 0 0.8rem;
+  margin-right: 1.5rem;
+  margin-left: 0.4rem;
+  line-height: 4.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--text-primary-color);
+}
 
-  .avatar__img {
-    width: 3.2rem;
-    height: 3.2rem;  
-    border-radius: 50%;    
-  }
+.header__nav-item--avatar {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.4rem;
+  margin: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.header__nav-item--avatar:hover {
+  background-color: #f0f0f0;
+}
 
-  .avatar__img--svg{
-    width: 2.4rem;
-  }
+.avatar__img {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+}
 
-  .nav__item--active{
-    color: var(--text-link-active-color);
-    border-bottom: 0.2rem solid var(--text-link-active-color); 
-  }
+.avatar__img--svg {
+  width: 2.4rem;
+}
+
+.nav__item--active {
+  color: var(--text-link-active-color);
+  border-bottom: 0.2rem solid var(--text-link-active-color);
+}
 /* Header end */
 
 /* MAIN */
-  .main{
-    width: 100%;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.main {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__logo {
+  width: 16rem;
+}
+.logo__img {
+  width: 100%;
+}
+
+.main__search {
+  background-color: salmon;
+  width: 100%;
+  height: 4rem;
+}
+.search__field {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.field__item{
+  display: block;
+  line-height: 3.6rem;
+  /* padding: 1rem; */
+}
+.field__icon {
+  /* background-color: steelblue; */
+  width: 2rem;
+}
+.field__input{
+  flex-grow: 1;
+  padding-left: 1.9rem;
+}
+
 /* Main end*/
 
 /* FOOTER */
-.footer{
+.footer {
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
