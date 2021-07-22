@@ -3,55 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DoppelGoogle</title>
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="./styles/style.css" />
-    
+
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <header class="header">
         <nav class="header__nav">
           <ul class="header__nav-item-container">
-            <li class="header__nav-item"><a class="header__nav-item--link nav__item--active" href="#" title="Todo">Todo</a></li>
-            <li class="header__nav-item"><a class="header__nav-item--link" href="#" title="Imagenes">Imágenes</a></li>
-            <li class="header__nav-item"><a class="header__nav-item--avatar" href="#">
-              <img class="avatar__img avatar__img--svg" src="./icons/apps_black_18dp.svg" alt="">
-            </a></li>
-            <li class="header__nav-item"><a class="header__nav-item--avatar" href="#">
-                <img class="avatar__img" src="https://via.placeholder.com/32.jpg?text=A" alt="">
-            </a></li>
+            <li class="header__nav-item">
+              <a
+                class="header__nav-item--link nav__item--active"
+                href="#"
+                title="Todo"
+                >Todo</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-item--link" href="#" title="Imagenes"
+                >Imágenes</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-item--avatar" href="#">
+                <img
+                  class="avatar__img avatar__img--svg"
+                  src="./icons/apps_black_18dp.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-item--avatar" href="#">
+                <img
+                  class="avatar__img"
+                  src="https://via.placeholder.com/32.jpg?text=A"
+                  alt=""
+                />
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
       <!--Header end-->
 
+      <!-- Main content -->
       <main class="main">
-        <figure class="main__logo">
-          <picture>
-            <!-- Para img responsive -->
-            <source src=""/>
-            <img src="" alt="Logo de Google" />
-          </picture>
-        </figure>
-        <form action="">
-          <div class="main__search">
-            <span class="search__icon-search"><!--Search icon--></span>
-            <input class="search__input" type="text" />
-            <span class="search__icon-voice"><!--Voice icon--></span>
+        <picture class="main__logo">
+          <!-- Para img responsive -->
+          <source src="" />
+          <img
+            src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png"
+            alt="Logo de Google"
+          />
+        </picture>
+
+        <form class="main__search" action="">
+          <div class="search__field">
+            <span class="field__icon">
+              <img class="field__icon__search" src="" alt="" />
+            </span>
+
+            <input class="field__input" type="text" />
+
+            <span class="field__icon">
+              <img class="field__icon__voice" src="" alt="" />
+            </span>
           </div>
-          <input class="search__btn" type="button" value="Buscar con Google" />
-          <input class="search__btn" type="button" value="Me siento con suerte" />
+
+          <!--
+            <input class="search__btn" type="button" value="Buscar con Google" />
+            <input class="search__btn" type="button" value="Me siento con suerte" />
+          -->
         </form>
-        <p class="main__txt">Ofrecido por Google en:</p>
-        <span class="main__txt txt--link"><a href="#">English</a>&nbsp;<a href="#">Español (Latinoamérica)</a></span>
+
+        <section class="main__txt">
+          <p class="txt">Ofrecido por Google en:</p>
+          <span class="txt txt--link">
+            <a href="#">English</a>&nbsp;<a href="#">Español (Latinoamérica)</a>
+          </span>
+        </section>
       </main>
       <!-- Main content end -->
 
