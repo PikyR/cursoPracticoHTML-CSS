@@ -145,7 +145,21 @@ body {
 .field__input:focus {
   outline: none;
 }
-
+.main__txt{
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 0.5rem;
+}
+.txt{
+  font-size: 1.3rem;
+  color: #3C4043;
+  padding: 1rem 0;
+}
+.main__txt--link{
+  color:#1967d2;
+  text-decoration: none;
+  padding: 0 0.8rem;
+}
 /* Main end*/
 
 /* FOOTER */
