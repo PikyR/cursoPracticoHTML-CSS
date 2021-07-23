@@ -102,34 +102,48 @@ body {
 
 .main__logo {
   width: 16rem;
+  padding-bottom: 2.5rem;
 }
 .logo__img {
   width: 100%;
 }
 
 .main__search {
-  background-color: salmon;
   width: 100%;
-  height: 4rem;
+  padding: 0 0.5rem;
 }
 .search__field {
+  border: 0.1rem solid #d3d3d3;
+  border-radius: 2rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  align-items: stretch;
 }
-.field__item{
+.field__item {
   display: block;
-  line-height: 3.6rem;
-  /* padding: 1rem; */
+  line-height: 3.8rem;
 }
 .field__icon {
-  /* background-color: steelblue; */
-  width: 2rem;
+  width: 3.8rem;
+  height: 3.8rem;
+  padding: 0.7rem;
 }
-.field__input{
+.field__icon__search{
+  width: 100%;
+}
+.field__icon__voice{
+  width: 100%;
+}
+
+.field__input {
   flex-grow: 1;
-  padding-left: 1.9rem;
+  padding-left: 0.5rem;
+  border: none;
+  background-color: transparent;
+  font-size: 1.8rem;
+}
+.field__input:focus {
+  outline: none;
 }
 
 /* Main end*/
